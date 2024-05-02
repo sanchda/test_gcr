@@ -28,7 +28,7 @@ def parse_maps_file(pid):
 
 def print_memory_map(memory_map):
     for obj, size in sorted(memory_map.items(), key=lambda item: item[1], reverse=True):
-        print(f"{size}    {obj}")
+        print(f"{size} {obj}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
